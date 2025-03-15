@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container1">
+        <h1 class="heading">Welcome to the quiz</h1>
+        <div class="score-display">
+            <span>Score = </span>
+            <span id="score-value">0</span>
+        </div>
+    </div>
+    <div class="quiz-container">
+        <button id="prev-btn" class="arrow-btn left-arrow"><i class="fas fa-chevron-left"></i></button>
+        <div class="container2">
+            <h2 id="question-text"></h2>
+            <div id="feedback-message" class="feedback-message"></div>
+            <div id="options-container" class="options-container"></div>
+        </div>
+        <button id="next-btn" class="arrow-btn right-arrow"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="container3">
+        <button id="submit-btn" class="button">Submit</button>
+    </div>
+    <div id="results-container" class="results-container">
+        <h2>Quiz Results</h2>
+        <p>Your final score:</p>
+        <div id="final-score" class="score-highlight">0</div>
+        <p id="correct-answers">Correct answers: 0</p>
+        <p id="wrong-answers">Wrong Answers: 0</p>
+        <button id="restart-btn" class="restart-btn">Restart Quiz</button>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
